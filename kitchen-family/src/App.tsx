@@ -3,17 +3,19 @@ import Navbar from './components/Navbar'
 import './App.css'
 import ResumeCard from './components/Card'
 import Carousel from './components/Carousel'
+import HeadingComponant from './components/Headings'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <Navbar />
-      <div style={{ padding: "4rem" }}>
-        <h1>Bienvenue sur mon app de recettes 🍲</h1>
-        <p>Sélectionne une catégorie ci-dessus pour explorer les plats.</p>
-      </div>
+    <Navbar/>
+      <HeadingComponant
+        titre="Bienvenue sur mon app de recettes 🍲"
+        sousTitre="Sélectionne une catégorie ci-dessus pour explorer les plats."
+      />
+
     <ResumeCard
         title="Sushi Deluxe"
         description="Ceci est un super test"

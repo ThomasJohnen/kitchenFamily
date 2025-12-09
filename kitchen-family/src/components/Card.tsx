@@ -26,7 +26,7 @@ const ResumeCard = ({
   categories,
 }: RecipeCardProps) => {
   return (
-    <Card.Root maxW="sm" overflow="hidden">
+    <Card.Root w={{ base: "100%", sm: "300px", md: "40rem" }} maxW="sm" overflow="hidden" boxShadow="1px 1px 10px grey" >
       <Image
         src={imageUrl}
         alt="Green double couch with wooden legs"
@@ -34,7 +34,7 @@ const ResumeCard = ({
       />
       <Card.Body gap="2">
         <Card.Title fontSize="1.5rem" textAlign="Center">{title}</Card.Title>
-        <Flex justify="space-between">
+        <Flex justify="space-between" >
             <Flex align="center" justify="center">
               <IconButton aria-label="timer" bg="none" color="black" p={0} _hover={{bg:"none", color:"black"}} >     
                 <RxLapTimer />        
@@ -51,7 +51,7 @@ const ResumeCard = ({
                 ))}
             </Stack>
         </Flex>
-        <Card.Description>
+        <Card.Description textAlign={{base: "justify", sm: "center", md: "center"}}>
           {description}
         </Card.Description>
       </Card.Body>

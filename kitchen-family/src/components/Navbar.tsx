@@ -4,9 +4,9 @@ import { IconButton } from "@chakra-ui/react";
 
 export default function Navbar() {
   return (
-    <Box zIndex="1000" bg="white" position="fixed" top="0" left="0" width="100%" px={4} shadow="0 2px 4px rgba(0, 0, 0, 0.1)">
+    <Box zIndex="1000" bg="white" position="fixed" top="0" left="0" w={{base: "0rem", sm:"30rem", md:"48rem", lg:"62rem", xl:"80rem"}} width="100%" p={{base: "0rem"}}  shadow="0 2px 4px rgba(0, 0, 0, 0.1)">
       <Flex align="center" justify="space-between" >
-        <Box fontWeight="bold" color="black" fontSize="xl">
+        <Box fontWeight="bold" color="black" fontSize="xl" pl="1rem">
          Kitchen Family
         </Box>
         <Flex gap={4}>

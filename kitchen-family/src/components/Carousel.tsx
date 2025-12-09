@@ -17,7 +17,7 @@ const recipes = Array.from({ length: 8 }).map((_, i) => ({
 
 const Carousel = () => {
   return (
-    <Box w="100%" mx="auto"  py={8}>
+    <Box w="100%" mx="auto" px={10} py={8}>
       <Heading fontSize="1.5rem" mb={4} textAlign="left">
         Recettes Populaires
       </Heading>
